@@ -20,3 +20,14 @@ h1{
     object-fit: cover;
     z-index: -1;
   }
+
+  @media (max-width: 600px) {
+
+    .Welcome{
+        padding: 10%;
+    }
+    p,h1{
+        text-align: center;
+    }
+
+  }
