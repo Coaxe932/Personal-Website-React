@@ -1,13 +1,26 @@
 import React from 'react';
 import './App.css';
+import {Routes, Route} from 'react-router-dom';
 
 // Components
-import NavBlock from './Components/NavBlock';
+import Home from './Components/Home';
+import Resume from './Components/Resume';
+import Res from './Files/ResumePDF.pdf';
+import Projects from './Components/Projects.jsx';
+import Travel from './Components/Travel.jsx';
+import Recipes from './Components/Recipes';
 
 function App() {
   return (
     <div>
-          <NavBlock />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/Resume' element={<Resume/>} />
+            <Route path='/Resume/Res' element={<Res/>} />
+            <Route path='/Projects' element={<Projects/>} />
+            <Route path='/Travel' element={<Travel/>} />
+            <Route path='/Recipes' element={<Recipes/>} />
+          </Routes>
     </div>
   );
 }
