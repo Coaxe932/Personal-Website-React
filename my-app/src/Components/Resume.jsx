@@ -3,6 +3,7 @@ import NavBlock from "./NavBlock";
 
 // Components
 import ResumeCard from './SubComponents/ResumeCard';
+import '../CSS/Resume.css';
 
 
 export default function Resume() {
