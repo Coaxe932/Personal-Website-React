@@ -30,4 +30,8 @@ h1{
         text-align: center;
     }
 
+    .background-video{
+        display: none;
+    }
+
   }

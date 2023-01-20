@@ -1,21 +1,15 @@
 import NavBlock from "./NavBlock";
 import '../CSS/Home.css';
+import React from "react";
+import video from '../Videos/mixkit-glodfish-swimming-8498-medium.mp4';
 
-export default class Home extends React.Component {
-    constructor(props) {
-        super(props);
-        this.bgvideo = null;
-    }
-    componentDidMount() {
-        this.bgvideo.muted = true;
-        this.bgvideo.play();
-    }
-    render() {
+export default function Home() {
+
         return (
             <div>
                 <NavBlock />
                 <div className="Welcome">
-                    <video ref={(video) => { this.bgvideo = video; }} className="background-video" autoPlay loop muted>
+                    <video className="background-video" autoPlay loop muted>
                         <source src="../Videos/mixkit-glodfish-swimming-8498-medium.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
@@ -24,5 +18,4 @@ export default class Home extends React.Component {
                 </div>
             </div>
         )
-    }
 }
