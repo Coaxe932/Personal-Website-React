@@ -42,6 +42,9 @@ export default function NavBlock() {
                     <li>
                         <Link to='/projects'>Projects</Link>
                     </li>
+                    <li>
+                        <Link to='/github'>Github</Link>
+                    </li>
                 </ul>
             </div>
         </nav>

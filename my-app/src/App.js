@@ -9,6 +9,8 @@ import Res from './Files/ResumePDF.pdf';
 import Projects from './Components/Projects.jsx';
 import Travel from './Components/Travel.jsx';
 import Recipes from './Components/Recipes';
+import Rec from './Files/Estofado-Recipe.pdf';
+import Git from './Components/Git';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
             <Route path='/Projects' element={<Projects/>} />
             <Route path='/Travel' element={<Travel/>} />
             <Route path='/Recipes' element={<Recipes/>} />
+            <Route path='/Recipes/Rec' element={<Rec/>} />
+            <Route path='/github' element={<Git/>} />
           </Routes>
     </div>
   );

@@ -1,0 +1,25 @@
+.Card--Container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    max-width: fit-content;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .Card{
+        height: 20rem;
+        width: 15rem;
+        translate: 30%;
+    }
+
+    .image{
+        height: 20rem;
+        width: 15rem;
+    }
+    .background-video{
+        display: none;
+    }
+}
