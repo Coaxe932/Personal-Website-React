@@ -18,6 +18,8 @@ export default function Recipes() {
             </video>
             <div className="Card--Container">
             <RecipeCard />
+            <RecipeCard />
+            <RecipeCard />
             </div>
         </div>
     )

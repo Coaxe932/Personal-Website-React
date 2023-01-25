@@ -10,8 +10,8 @@ export default function ResumeCard(){
       }
 
     return(
-        <div className="Container">
-            <Link className="Card">
+        <div>
+            <Link className="Card-1">
             <img src={ResumeImg} className="image" onClick={ClickImg} alt="Resume"/>
             </Link>
         </div>
