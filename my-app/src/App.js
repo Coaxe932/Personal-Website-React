@@ -1,6 +1,9 @@
+//Other Imports
 import React from 'react';
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
+
+
 
 // Components
 import Home from './Components/Home';
@@ -13,6 +16,9 @@ import Rec from './Files/Estofado-Recipe.pdf';
 import Git from './Components/Git';
 
 function App() {
+
+
+
   return (
     <div>
           <Routes>

@@ -6,6 +6,18 @@
     flex-direction: column;
 }
 
+video#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  
+
 h1{
     margin: 5%;
     margin-top: 15%;
