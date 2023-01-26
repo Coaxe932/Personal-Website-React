@@ -14,22 +14,6 @@ export default function Home() {
 
   const [currentTime, setCurrentTime] = useState(localStorage.getItem("videoTime"));
 
-  useEffect(() => {
-    const vid = document.getElementById("myVideo");
-    if (vid) {
-      if (currentTime) vid.currentTime = currentTime;
-      vid.play();
-    } else {
-      console.log("Video element not found")
-    }
-    if (currentTime) vid.currentTime = currentTime;
-    vid.play();
-    const intervalId = setInterval(() => {
-      setCurrentTime(vid.currentTime);
-      localStorage.setItem("videoTime", vid.currentTime);
-    }, 700);
-    return () => clearInterval(intervalId);
-  }, [currentTime]);
 
 
 
