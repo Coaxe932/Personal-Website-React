@@ -29,4 +29,8 @@
     .background-video{
         display: none;
     }
+
+    video#myVideo{
+        display: none;
+    }
 }

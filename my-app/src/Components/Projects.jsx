@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 // Components
 import NavBlock from "./NavBlock";
 
+const mobileQuery = window.matchMedia("(max-width: 600px)");
 
 export default function Projects() {
 
@@ -24,15 +25,15 @@ export default function Projects() {
       const intervalId = setInterval(() => {
         setCurrentTime(vid.currentTime);
         localStorage.setItem("videoTime", vid.currentTime);
-      }, 1000);
+      }, 700);
       return () => clearInterval(intervalId);
     }, [currentTime]);
 
     return (
         <div>
-            <video id="myVideo" src={video} loop>
+             {!mobileQuery.matches && <video id="myVideo" src={video} loop autoPlay>
               Your browser does not support HTML5 video.
-            </video>
+            </video>}
             <NavBlock />
             <div className="Card--Container">
             </div>

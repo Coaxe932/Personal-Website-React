@@ -2,3 +2,9 @@
 
 
 
+@media (max-width: 600px) {
+
+    video#myVideo{
+        display: none;
+    }
+}

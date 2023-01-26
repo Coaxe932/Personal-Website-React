@@ -26,13 +26,13 @@ export default function Recipes() {
       const intervalId = setInterval(() => {
         setCurrentTime(vid.currentTime);
         localStorage.setItem("videoTime", vid.currentTime);
-      }, 1000);
+      }, 700);
       return () => clearInterval(intervalId);
     }, [currentTime]);
 
     return (
         <div>
-            <video id="myVideo" src={video} loop>
+            <video id="myVideo" src={video} loop autoPlay>
               Your browser does not support HTML5 video.
             </video>
             <NavBlock />

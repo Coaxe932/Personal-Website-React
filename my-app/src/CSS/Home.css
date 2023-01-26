@@ -46,4 +46,8 @@ h1{
         display: none;
     }
 
+    video#myVideo{
+        display: none;
+    }
+
   }
