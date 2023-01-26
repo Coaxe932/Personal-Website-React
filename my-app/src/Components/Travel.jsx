@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 // Components
 import NavBlock from "./NavBlock";
 
-const mobileQuery = window.matchMedia("(max-width: 600px)");
+const mobileQuery = window.matchMedia("max-width: 600px");
 
 export default function Travel() {
 

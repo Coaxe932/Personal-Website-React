@@ -8,7 +8,7 @@ import ResumeCard from './SubComponents/ResumeCard';
 import NavBlock from "./NavBlock";
 
 
-const mobileQuery = window.matchMedia("(max-width: 600px)");
+const mobileQuery = window.matchMedia("max-width: 600px");
 
 export default function Resume() {
     if(!mobileQuery.matches){
