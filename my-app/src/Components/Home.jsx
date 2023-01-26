@@ -23,9 +23,11 @@ export default function Home() {
       <div className="Welcome">
 
 
+
         {!mobileQuery.matches ? <video id="myVideo" src={video} loop autoPlay>
           Your browser does not support HTML5 video.
         </video> : <p>Video not available on mobile</p>}
+
 
 
         <h1> Welcome to my Website! </h1>

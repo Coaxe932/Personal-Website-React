@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 export default function ResumeCard(){
 
     const ClickImg = () => {
-        window.location.assign('./Files/ResumePDF.pdf')
+        window.open('./Files/ResumePDF.pdf', '_blank');
       }
 
     return(
