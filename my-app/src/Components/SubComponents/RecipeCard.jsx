@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 export default function RecipeCard(){
 
     const ClickImg = () => {
-        window.location.assign('./Files/Estofado-Recipe.pdf');
+        window.open('./Files/Estofado-Recipe.pdf', '_blank');
       }
 
     return(
