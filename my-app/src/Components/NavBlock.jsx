@@ -46,6 +46,9 @@ export default function NavBlock() {
                     <li>
                         <Link to='/github'>Github</Link>
                     </li>
+                    <li>
+                        <Link to='/Swipe'>Ninder</Link>
+                    </li>
                 </ul>
             </div>
         </nav>

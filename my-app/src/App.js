@@ -14,6 +14,7 @@ import Travel from './Components/Travel.jsx';
 import Recipes from './Components/Recipes';
 import Rec from './Files/Estofado-Recipe.pdf';
 import Git from './Components/Git';
+import Swipe from './Components/Swipe';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
             <Route path='/Recipes' element={<Recipes/>} />
             <Route path='/Recipes/Rec' element={<Rec/>} />
             <Route path='/github' element={<Git/>} />
+            <Route path='/Swipe' element={<Swipe/>} />
           </Routes>
     </div>
   );
