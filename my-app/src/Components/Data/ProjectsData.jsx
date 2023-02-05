@@ -28,4 +28,11 @@ export default [
         file: './Files/ProductionAnalysis/tabstrip.htm',
         description: "Utilized time studies to conduct production studies for a construction company. Multiple variables were considered and the outcomes of this study were used for future cost estimating",
     },
+    {
+        id: 5,
+        title: "Ninder",
+        coverImg: "../images/NinderScreen.png",
+        file: "/Swipe",
+        description: "Basically like Tinder but its just me and you can't swipe left",
+    },
 ]

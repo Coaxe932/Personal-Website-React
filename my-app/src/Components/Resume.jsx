@@ -1,3 +1,6 @@
+import React from 'react';
+
+
 //Other Imports
 import video from '../Videos/mixkit-glodfish-swimming-8498-medium.mp4';
 import { useEffect, useState } from 'react';

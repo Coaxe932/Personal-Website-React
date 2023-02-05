@@ -1,3 +1,6 @@
+import React from 'react';
+
+
 //Other Imports
 import '../CSS/Recipe.css';
 import video from '../Videos/mixkit-glodfish-swimming-8498-medium.mp4';

@@ -3,47 +3,68 @@ import "../CSS/Swipe.css";
 
 const Swipe = () => {
   const [x0, setX0] = useState(null);
-  const [swipeDirection, setSwipeDirection] = useState(null);
+  const [x1, setX1] = useState(null);
+  const [cardStyles, setCardStyles] = useState({});
   const [cardContent, setCardContent] = useState(
     <img src="../images/Me-4.png" alt="Profile Image" />
   );
 
-  const location = () => {
-    window.location.href = "https://nicholasradstake.com";
-  };
+  function ClickFunc() {
+    window.location.href = "http://nicholasradstake.com";
+  }
+
+  
 
   const header = (
     <div className="Header--Container">
-      <img src="../images/tinder.png" className="Header Image" onClick={location}></img>
-      <p className="Header--text"> Ninder </p>
+        <img src="../images/tinder.png" onClick={ClickFunc} ></img>
+        <p className="Header--text"> Ninder </p>
     </div>
   );
 
   useEffect(() => {
     const card = document.getElementById("card");
+    let initialX = 0;
+
+    
+
     card.addEventListener("touchstart", (e) => {
       setX0(e.touches[0].clientX);
+      initialX = e.touches[0].clientX;
     });
-    card.addEventListener("touchmove", (e) => {
-      if (x0) {
-        const currentX = e.touches[0].clientX;
-        const swipeDifference = currentX - x0;
-        card.style.transform = `translateX(${swipeDifference}px)`;
-      }
-    });
-    card.addEventListener("touchend", (e) => {
-      const x1 = e.changedTouches[0].clientX;
-      card.style.transform = `translateX(0px)`;
-      setX0(null);
-      setSwipeDirection(null);
 
-      if (x0 && x1) {
-        const swipeDifference = x0 - x1;
-        if (swipeDifference > 50) {
-          setSwipeDirection("left");
-        } else if (swipeDifference < -50) {
-          setSwipeDirection("right");
-        }
+    card.addEventListener("touchmove", (e) => {
+      setCardStyles({
+        transform: `translateX(${e.touches[0].clientX - initialX}px)`,
+      });
+    });
+
+    card.addEventListener("touchend", (e) => {
+      setX1(e.changedTouches[0].clientX);
+      let cardWidth = card.offsetWidth;
+      let swipeDistance = x1 - x0;
+
+      const threshold = 50;
+
+      if ((e.changedTouches[0].clientX) < -threshold) {
+        console.log("Swiped left");
+        console.log(e.changedTouches[0].clientX);
+        setCardStyles({ transform: "translateX(0)" });
+        setCardContent(
+        <div id="Reject">
+        <p> You can't swipe left here </p>
+      </div>);
+      } else if ((e.changedTouches[0].clientX)> threshold) {
+        console.log("Swiped right");
+        console.log(swipeDistance);
+        setCardStyles({ transform: "translateX(0)" });
+        setCardContent(
+          <div id="Match">
+            <p> It's a Match! Text me +1(248) 382-8520</p>
+          </div>
+        );
+      } else {
+        setCardStyles({ transform: "translateX(0)" });
       }
     });
   }, []);
@@ -51,23 +72,11 @@ const Swipe = () => {
   return (
     <div>
       <div>{header}</div>
-      <div className="Ninder--Desc"><p> Basically Tinder, but its just me and you can't swipe left </p></div>
       <div id="cardContainer">
-        <div id="info">
-          <h2>Nicholas Radstake    27</h2>
-          <p>I sent you this because i think youre cute</p>
-        </div>
-        <div
-          id="card"
-          className={`card ${swipeDirection === "left" ? "left" : ""} ${swipeDirection === "right" ? "right" : ""
-            }`}
-        >
+        <div id="card" style={cardStyles}>
           {cardContent}
         </div>
       </div>
-      {swipeDirection === "right" ? (
-        <div id="match">It's a match! Text me +1(248) 382-8520</div>
-      ) : null}
     </div>
   );
 };
