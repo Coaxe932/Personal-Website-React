@@ -44,3 +44,77 @@
     margin-left: 20%;
     font-size: xx-large;
   }
+
+  .match--container{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+
+  .Match--Text{
+    font-size: x-large;
+    font-weight: 700;
+    color: black;
+  }
+
+  .card {
+    transition: all 0.3s ease-in-out;
+    transform: translateX(0);
+  }
+  
+  .left {
+    transform: translateX(-100%);
+  }
+  
+  .right {
+    transform: translateX(100%);
+  }
+  
+  #match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  #info {
+    position: absolute;
+    bottom: 15%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    z-index: 5;
+    color: white;
+    margin: 2vh;
+  }
+
+  #info h2,p{
+    text-align: start;
+
+    width: 130%;
+  }
+
+  #info p{
+    margin-top: .5vh;
+  }
+
+  .Ninder--Desc{
+    display: flex;
+    margin: 10px;
+    font-stretch: expanded;
+  }
+
+
+  .Ninder--Desc p{
+    font-weight: 800;
+    font-size: large;
+    text-align: center;
+  }
+  
+  

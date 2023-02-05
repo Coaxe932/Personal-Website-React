@@ -34,7 +34,7 @@
     .background-video{
         display: none;
     }
-    video#myVideo{
+    #myVideo{
         display: none;
     }
 }

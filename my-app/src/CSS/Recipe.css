@@ -13,7 +13,7 @@
     .Card--Container {
         height: 170%;
     }
-    video#myVideo{
+    #myVideo{
         display: none;
     }
 

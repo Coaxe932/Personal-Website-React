@@ -18,22 +18,22 @@ import Swipe from './Components/Swipe';
 
 function App() {
 
-
-
+  
 
   return (
     <div>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/Resume' element={<Resume/>} />
-            <Route path='/Resume/Res' element={<Res/>} />
-            <Route path='/Projects' element={<Projects/>} />
-            <Route path='/Travel' element={<Travel/>} />
-            <Route path='/Recipes' element={<Recipes/>} />
-            <Route path='/Recipes/Rec' element={<Rec/>} />
-            <Route path='/github' element={<Git/>} />
-            <Route path='/Swipe' element={<Swipe/>} />
-          </Routes>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/Resume' element={<Resume/>} />
+        <Route path='/Resume/Res' element={<Res/>} />
+        <Route path='/Projects' element={<Projects/>} />
+        <Route path='/Travel' element={<Travel/>} />
+        <Route path='/Recipes' element={<Recipes/>} />
+        <Route path='/Recipes/Rec' element={<Rec/>} />
+        <Route path='/github' element={<Git/>} />
+        <Route path='/Swipe' element={<Swipe/>} />
+        <Route path='*' element={<div>404 Not Found</div>} />
+      </Routes>
     </div>
   );
 }
