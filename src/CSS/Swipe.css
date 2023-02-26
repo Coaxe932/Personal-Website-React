@@ -1,0 +1,106 @@
+#cardContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card:hover{
+  cursor: pointer;
+}
+
+#card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.Header--Container{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+}
+
+.Header--Container img:hover {
+  transform: scale(1.7) rotate(5deg);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  }
+
+.Header--Container img{
+  height: 3vh;
+  display: flex;
+  margin: 3vh;
+}
+
+.Header--text{
+  height: fit-content;
+  color: red;
+  font-weight: 900;
+  margin-left: 20%;
+  font-size: xx-large;
+}
+
+#Match {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/HappyNick.JPG);
+  background-size: cover;
+  color: white;
+  }
+
+  #Match p{
+    font-size: x-large;
+    font-weight: 900;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  }
+
+  #Reject p{
+    font-size: x-large;
+    font-weight: 900;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  }
+
+  #Reject{
+    width: 300px;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/Reject.JPG);
+  background-size: cover;
+  color: white;
+  }
