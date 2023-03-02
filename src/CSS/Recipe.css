@@ -1,0 +1,21 @@
+.Card--Container {
+    display: flex;
+    margin-top: 100px;
+    overflow-x: scroll;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (max-width: 600px) {
+    .Card--Container {
+        height: 170%;
+    }
+    #myVideo{
+        display: none;
+    }
+
+}
+
