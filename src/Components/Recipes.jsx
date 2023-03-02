@@ -17,7 +17,7 @@ export default function Recipes() {
       if (currentTime) vid.currentTime = currentTime;
       vid.play();
     } else {
-      console.log("Video element not found");
+      console.log("Mobile, Video not found");
     }
 
     const intervalId = setInterval(() => {
@@ -34,12 +34,9 @@ export default function Recipes() {
 
   return (
     <div>
-      {!isMobile && (
-        <video id="myVideo" src={video} loop autoPlay>
-          Your browser does not support HTML5 video.
-        </video>
-      )}
-      {isMobile && <p>Video not available on mobile</p>}
+      {!isMobile ? <video id="myVideo" src={video} loop autoPlay>
+        Your browser does not support HTML5 video.
+      </video> : console.log("Mobile")}
       <NavBlock />
       <div className="Card--Container">
         <RecipeCard />

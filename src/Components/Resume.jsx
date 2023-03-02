@@ -17,32 +17,32 @@ export default function Resume() {
   const [currentTime, setCurrentTime] = useState(localStorage.getItem("videoTime"));
 
   useEffect(() => {
-    const vid = document.getElementById("myVideo");
-    if (vid) {
-      if (currentTime) vid.currentTime = currentTime;
-      vid.play();
-    } else {
-      console.log("Video element not found")
+    const mobileQuery = window.matchMedia("(max-width: 600px)");
+    if (!mobileQuery.matches) {
+      const vid = document.getElementById("myVideo");
+      if (vid) {
+        if (currentTime) vid.currentTime = currentTime;
+        vid.play();
+      } else {
+        console.log("Mobile, video not found");
+      }
+      const intervalId = setInterval(() => {
+        setCurrentTime(vid.currentTime);
+        localStorage.setItem("videoTime", vid.currentTime);
+      }, 700);
+      return () => clearInterval(intervalId);
     }
-    if (currentTime) vid.currentTime = currentTime;
-    vid.play();
-    const intervalId = setInterval(() => {
-      setCurrentTime(vid.currentTime);
-      localStorage.setItem("videoTime", vid.currentTime);
-    }, 700);
-    return () => clearInterval(intervalId);
   }, [currentTime]);
+
+
 
   const isMobile = window.matchMedia("(max-width: 600px)").matches;
 
   return (
     <div>
-      {!isMobile && (
-        <video id="myVideo" src={video} loop autoPlay>
-          Your browser does not support HTML5 video.
-        </video>
-      )}
-      {isMobile && <p>Video not available on mobile</p>}
+      {!isMobile ? <video id="myVideo" src={video} loop autoPlay>
+        Your browser does not support HTML5 video.
+      </video> : console.log("Mobile")}
       <NavBlock />
       <ResumeCard />
     </div>

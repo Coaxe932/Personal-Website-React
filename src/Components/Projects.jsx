@@ -21,7 +21,7 @@ export default function Projects() {
         if (currentTime) vid.currentTime = currentTime;
         vid.play();
       } else {
-        console.log("Video element not found")
+        console.log("Mobile, video not found");
       }
       const intervalId = setInterval(() => {
         setCurrentTime(vid.currentTime);
@@ -45,7 +45,7 @@ export default function Projects() {
     <div>
       {!isMobile ? <video id="myVideo" src={video} loop autoPlay>
         Your browser does not support HTML5 video.
-      </video> : <p>Video not available on mobile</p>}
+      </video> : console.log("Mobile")}
       <NavBlock />
       <div className="Card--Container">
         {Card_Element}
