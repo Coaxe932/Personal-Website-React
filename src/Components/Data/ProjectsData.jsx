@@ -3,9 +3,9 @@ export default [
         id: 1,
         title: "CFT Website",
         coverImg: "../images/CFTWebsite.png",
-        website: "https://centralfloridatapping.com/",
         file: "https://centralfloridatapping.com/",
         description: "Made a company website using CSS, Javascript & Html. This website is currently being used by the company.",
+        address: '/projects',
     },
     {
         id: 2,
@@ -13,6 +13,7 @@ export default [
         coverImg: "../images/Model4.png",
         file: './Files/Model4.mp4',
         description: "Created a simulation using C++, OpenGL and Simio. This simulation helped implement a new manufacturing process for a gasket assembly.",
+        address: '/projects',
     },
     {
         id: 3,
@@ -20,6 +21,7 @@ export default [
         coverImg: "../images/CostAnalysis.png",
         file: './Files/TRG_Cost_Analysis.pdf',
         description: "Made an initial cost analysis on a gasket company, identifying current expences and potential cost savings.",
+        address: '/projects',
     },
     {
         id: 4,
@@ -27,12 +29,14 @@ export default [
         coverImg: "../images/Prod_Analysis.png",
         file: './Files/ProductionAnalysis/tabstrip.htm',
         description: "Utilized time studies to conduct production studies for a construction company",
+        address: '/projects',
     },
     {
         id: 5,
         title: "Ninder",
         coverImg: "../images/NinderScreen.png",
-        file: "/Swipe",
+        file: "Swipe",
         description: "Basically like Tinder but its just me and you can't swipe left",
+        address: '/Swipe',
     },
 ]
