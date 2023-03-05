@@ -2,6 +2,6 @@
 
 export default function Git(){
     return(
-        window.location.open('https://github.com/Coaxe932','_blank')
+        window.open('https://github.com/Coaxe932','_blank')
     )
-}
+} 

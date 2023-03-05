@@ -11,7 +11,7 @@ export default function ProjectsCard(props) {
     }
 
     return (
-        <Link to={`/${address}`}>
+        <Link to={`http://nicholasradstake.com${address}`}>
             <div className="Card-2">
                 <p className="info">{description}</p>
                 <img src={props.coverImg} className="image" onClick={ClickImg} alt={title} />
