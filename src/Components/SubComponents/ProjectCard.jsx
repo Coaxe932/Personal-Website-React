@@ -1,6 +1,6 @@
 import React from "react";
 import '../../CSS/ProjectCard.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function ProjectsCard(props) {
 
@@ -11,11 +11,11 @@ export default function ProjectsCard(props) {
     }
 
     return (
-        <Link to={`http://nicholasradstake.com${address}`}>
-            <div className="Card-2">
+        <NavLink to={`/${file}`} target="_blank">
+            <div className="Card-Projects">
                 <p className="info">{description}</p>
-                <img src={props.coverImg} className="image" onClick={ClickImg} alt={title} />
+                <img src={props.coverImg} className="image--Projects" onClick={ClickImg} alt={title} />
             </div>
-        </Link>
+        </NavLink>
     )
 }

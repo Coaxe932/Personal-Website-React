@@ -8,7 +8,7 @@
     width: auto;
 }
 
-.Me--Image {
+.Me--Image--Navblock {
     height: 140px;
     box-shadow: 0px 0px 10px 2px rgba(57, 56, 56, 0.75);
     border-radius: 30%;
@@ -64,6 +64,15 @@ a{
     transform: 150%;
 }
 
+.LeftComponent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    max-width: fit-content;
+
+}
+
 
 
 
@@ -102,6 +111,9 @@ a{
     }
     video#myVideo{
         display: none;
+    }
+    .NavBar--Container {
+        width: fit-content;
     }
 
   }

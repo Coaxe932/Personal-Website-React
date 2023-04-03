@@ -11,7 +11,7 @@ import ProjectsData from './Data/ProjectsData';
 
 export default function Projects() {
 
-  const [currentTime, setCurrentTime] = useState(localStorage.getItem("videoTime"));
+const [currentTime, setCurrentTime] = useState(localStorage.getItem("videoTime"));
 
   useEffect(() => {
     const mobileQuery = window.matchMedia("(max-width: 600px)");
@@ -47,7 +47,8 @@ export default function Projects() {
         Your browser does not support HTML5 video.
       </video> : console.log("Mobile")}
       <NavBlock />
-      <div className="Card--Container">
+      <p className='Projects--Instructions'> Swipe Right →</p>
+      <div className="Card--Container--Projects">
         {Card_Element}
       </div>
     </div>

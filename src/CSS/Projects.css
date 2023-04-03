@@ -1,9 +1,37 @@
+.Card--Container--Projects {
+    display: flex;
+    margin-bottom: 10%;
+    overflow-x: scroll;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.Projects--Instructions{
+    
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    translate: 0em 2em;
+}
+
+html, body {
+    overflow-y: hidden;
+  }
+
+
 @media (max-width: 600px) {
-    .Card--Container {
+    .Card--Container--Projects {
         height: 170%;
     }
     #myVideo{
         display: none;
+    }
+    .Projects--Instructions{
+        margin-top: 20px;
+
     }
 
 }

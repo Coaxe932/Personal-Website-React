@@ -10,9 +10,9 @@ export default function RecipeCard(){
       }
 
     return(
-        <div className="Container">
-            <Link className="Card">
-            <img src={RecipeImg} className="image" onClick={ClickImg} alt="Recipe"/>
+        <div className="Container--Recipe">
+            <Link className="Card--Recipe">
+            <img src={RecipeImg} className="image--Recipe" onClick={ClickImg} alt="Recipe"/>
             </Link>
         </div>
     )

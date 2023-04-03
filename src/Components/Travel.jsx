@@ -2,17 +2,20 @@ import React from 'react';
 
 
 //Other Imports
-import '../CSS/Recipe.css';
+import '../CSS/Travel.css';
 import video from '../Videos/mixkit-glodfish-swimming-8498-medium.mp4';
 import { useEffect, useState } from 'react';
+import TravelData from './Data/TravelData';
 
 // Components
 import NavBlock from "./NavBlock";
+import TravelCard from './SubComponents/TravelCard';
 
 const mobileQuery = window.matchMedia("max-width: 600px");
 
 export default function Travel() {
   const [currentTime, setCurrentTime] = useState(localStorage.getItem('videoTime'));
+
 
   useEffect(() => {
   
@@ -35,13 +38,28 @@ export default function Travel() {
   
   const isMobile = window.matchMedia("(max-width: 600px)").matches;
 
-  return (
+
+  const Card_Element = TravelData.map(item => {
+    return (<TravelCard
+      key={item.id}
+      {...item}
+    />)
+  }
+  )
+
+
+
+  
+
+  return ( 
     <div>
       {!isMobile ? <video id="myVideo" src={video} loop autoPlay>
         Your browser does not support HTML5 video.
       </video> : console.log("Mobile")}
       <NavBlock />
-      <div className="Card--Container"></div>
+      <div className="Card--Container--Travel">
+        {Card_Element}
+      </div>
     </div>
   );
 }

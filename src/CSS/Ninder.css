@@ -1,0 +1,178 @@
+#cardContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card:hover {
+  cursor: pointer;
+}
+
+#card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.Header--Container {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 7vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Tinder--Img:hover {
+  transform: scale(1.7) rotate(5deg);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.Filter:hover {
+  cursor: pointer;
+}
+
+.Filter{
+  align-items: flex-end;
+  height: 3vh;
+}
+
+.Tinder--Img {
+  height: 3vh;
+  display: flex;
+  margin: 3vh;
+}
+
+.Header--text {
+  height: fit-content;
+  color: red;
+  font-weight: 900;
+  font-size: xx-large;
+  margin-left: 30%;
+}
+
+#Match {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/HappyNick.JPG);
+  background-size: cover;
+  color: white;
+}
+
+#Match p {
+  font-size: x-large;
+  font-weight: 900;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#Reject p {
+  font-size: x-large;
+  font-weight: 900;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#Reject {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/Reject.JPG);
+  background-size: cover;
+  color: white;
+}
+
+
+.TinderTitle {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 2vh;
+  padding: 4vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* -------------------------------- */
+
+.FilterMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  overflow-y: scroll;
+  transition: all 0.5s ease-out;
+  transform: translateY(-100%);
+}
+
+.FilterMenu--active {
+  transform: translateY(0);
+}
+
+.FilterMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  width: 80%;
+}
+
+.FilterMenu li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.FilterMenu button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}

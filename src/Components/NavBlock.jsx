@@ -1,7 +1,7 @@
 //Other Imports
 import React from 'react';
 import '../CSS/NavBlock.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 // Components
@@ -24,27 +24,24 @@ export default function NavBlock() {
     return (
         <nav className='NavBar--Container'>
             <div className='LeftComponent'>
-                <img src={meImage} className='Me--Image' alt='Me' onClick={ChangeImage} />
+                <img src={meImage} className='Me--Image--Navblock' alt='Me' onClick={ChangeImage} />
             </div>
             <div className='RightComponent'>
                 <ul className='Links'>
                     <li>
-                        <Link to='/'>Home</Link>
+                        <NavLink to='/'>Home</NavLink>
                     </li>
                     <li>
-                        <Link to='/resume'>Resume</Link>
+                        <NavLink to='/resume'>Resume</NavLink>
                     </li>
                     <li>
-                        <Link to='/recipes'>Recipes</Link>
+                        <NavLink to='/recipes'>Recipes</NavLink>
                     </li>
                     <li>
-                        <Link to='/travel'>Travel</Link>
+                        <NavLink to='/travel'>Travel</NavLink>
                     </li>
                     <li>
-                        <Link to='/projects'>Projects</Link>
-                    </li>
-                    <li>
-                        <Link to='/github'>Github</Link>
+                        <NavLink to='/projects'>Projects</NavLink>
                     </li>
                 </ul>
             </div>

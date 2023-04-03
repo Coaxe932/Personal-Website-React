@@ -38,7 +38,7 @@ export default function Recipes() {
         Your browser does not support HTML5 video.
       </video> : console.log("Mobile")}
       <NavBlock />
-      <div className="Card--Container">
+      <div className="Card--Container--Recipe">
         <RecipeCard />
       </div>
     </div>

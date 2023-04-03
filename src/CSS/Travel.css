@@ -1,16 +1,17 @@
-.Card--Container--Recipe {
+.Card--Container--Travel {
     display: flex;
-    margin-top: 100px;
     overflow-x: scroll;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
-}
-
-
+    overflow-x: scroll;
+    flex-shrink: 0;
+    overflow-wrap: normal;
+  }
 
 @media (max-width: 600px) {
-    .Card--Container {
+    .Card--Container--Travel {
         height: 170%;
     }
     #myVideo{
@@ -19,3 +20,4 @@
 
 }
 
+ 

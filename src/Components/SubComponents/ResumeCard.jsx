@@ -11,9 +11,11 @@ export default function ResumeCard(){
 
     return(
         <div>
-            <Link className="Card-1">
-            <img src={ResumeImg} className="image" onClick={ClickImg} alt="Resume"/>
+            <div className="Card--Container--Resume">
+            <Link className="Card-Resume">
+            <img src={ResumeImg} className="image--Resume" onClick={ClickImg} alt="Resume"/>
             </Link>
+            </div>
         </div>
     )
 }
