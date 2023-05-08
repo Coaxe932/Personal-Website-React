@@ -1,7 +1,6 @@
 .Card--Container--Recipe {
     display: flex;
     margin-top: 100px;
-    overflow-x: scroll;
     flex-direction: row;
     width: 100%;
     height: 100%;

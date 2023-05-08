@@ -1,11 +1,9 @@
 .Card--Container--Travel {
     display: flex;
-    overflow-x: scroll;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    overflow-x: scroll;
     flex-shrink: 0;
     overflow-wrap: normal;
   }
