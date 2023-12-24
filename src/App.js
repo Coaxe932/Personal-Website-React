@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
+import { useState } from 'react'; 
 
 
 
@@ -14,8 +15,17 @@ import Travel from './Components/Travel.jsx';
 import Recipes from './Components/Recipes';
 import Rec from './Files/Estofado-Recipe.pdf';
 import Ninder from './Components/Data/Ninder';
+import GPT from './Components/SubComponents/GPT';
+import Blog from './Components/Blog';
+import Login from './Components/Login';
 
 function App() {
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    const handleLogin = (status) => {
+        setIsLoggedIn(status);
+    };
 
   
 
@@ -30,6 +40,8 @@ function App() {
         <Route path='/Recipes' element={<Recipes/>} />
         <Route path='/Recipes/Rec' element={<Rec/>} />
         <Route path='/ninder/' element={<Ninder/>} />
+        <Route path='/GPT/' element={<GPT/>} />
+        <Route path='/blog' element={isLoggedIn ? <Blog /> : <Login onLogin={handleLogin} />} />
         <Route path='*' element={<div>404 Not Found</div>} />
       </Routes>
     </div>

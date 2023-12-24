@@ -1,0 +1,111 @@
+
+.blog-title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-title {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.post-content {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.post-date {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+}
+.blog-container {
+    display: flex;
+    height: 100vh;
+}
+
+.blog-sidebar {
+    width: 100px; /* Initial width */
+    background: linear-gradient(to bottom, #00B4DB, #0083B0);
+    transition: width 0.5s ease;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+/* This will expand the sidebar on hover */
+.blog-sidebar:hover {
+    width: 200px;
+}
+
+.blog-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-sidebar ul li {
+    padding: 10px 0; /* Add padding for each list item */
+}
+
+.blog-sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px; /* Add padding to the link for better clickability */
+    display: block;
+    opacity: 0; /* Hide the text initially */
+    white-space: nowrap; /* Ensure the text doesn't wrap */
+    transition: opacity 0.5s ease;
+}
+
+/* Show the text on sidebar hover */
+.blog-sidebar:hover ul li a {
+    opacity: 1;
+}
+
+.blog-main {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    position: relative; /* For floating elements */
+}
+.blog-post {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative; /* For absolute positioning of the button */
+}
+
+.post-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.post-button:hover {
+    background-color: #0056b3;
+}

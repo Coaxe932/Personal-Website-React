@@ -41,4 +41,18 @@ export default [
         file: "https://github.com/Coaxe932",
         description: "See all my github work",
     },
+    {
+        id: 7,
+        title: "Chat GPT Project",
+        coverImg: "../images/GPT-Front.jpg",
+        file: "#/GPT/",
+        description: "My version of Chat GPT",
+    },
+    {
+        id: 8,
+        title: "Blog",
+        coverImg: "../images/Nick-Blog.jpg",
+        file: "#/Blog/",
+        description: "My Blog Post",
+    },
 ]

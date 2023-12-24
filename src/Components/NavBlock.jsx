@@ -43,6 +43,9 @@ export default function NavBlock() {
                     <li>
                         <NavLink to='/projects'>Projects</NavLink>
                     </li>
+                    <li>
+                    <NavLink to="/blog">Blog</NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>
