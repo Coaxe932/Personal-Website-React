@@ -13,9 +13,9 @@ const Blog = () => {
         <div className="blog-container">
             <aside className="blog-sidebar">
                 <nav>
-                    <ul>
+                    <ul className='Blog-UL'>
                         {posts.map(post => (
-                            <li key={post._id}><a href={`#post-${post._id}`}>{post.title}</a></li>
+                            <li key={post._id} className="Blog-Link"><a href={`#post-${post._id}`}>{post.title}</a></li>
                         ))}
                     </ul>
                 </nav>

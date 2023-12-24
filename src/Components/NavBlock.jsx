@@ -28,22 +28,22 @@ export default function NavBlock() {
             </div>
             <div className='RightComponent'>
                 <ul className='Links'>
-                    <li>
+                    <li className='Navblockli'>
                         <NavLink to='/'>Home</NavLink>
                     </li>
-                    <li>
+                    <li className='Navblockli'>
                         <NavLink to='/resume'>Resume</NavLink>
                     </li>
-                    <li>
+                    <li className='Navblockli'>
                         <NavLink to='/recipes'>Recipes</NavLink>
                     </li>
-                    <li>
+                    <li className='Navblockli'>
                         <NavLink to='/travel'>Travel</NavLink>
                     </li>
-                    <li>
+                    <li className='Navblockli'>
                         <NavLink to='/projects'>Projects</NavLink>
                     </li>
-                    <li>
+                    <li className='Navblockli'>
                     <NavLink to="/blog">Blog</NavLink>
                     </li>
                 </ul>
